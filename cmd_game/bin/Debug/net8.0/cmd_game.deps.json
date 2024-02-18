@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "game_cmd/1.0.0": {
+      "cmd_game/1.0.0": {
         "runtime": {
-          "game_cmd.dll": {}
+          "cmd_game.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "game_cmd/1.0.0": {
+    "cmd_game/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
