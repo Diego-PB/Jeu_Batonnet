@@ -1,1 +1,1 @@
-# Jeu_Batonnet
+# Sticks game
