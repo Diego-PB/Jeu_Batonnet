@@ -13,6 +13,9 @@ namespace console_game
             // the menu choice
             string menuChoice = "";
 
+            // Number of sticks in the game
+            int nbSticks = 20;
+
             // While the game running execute the game : else exit the game
             while (gameRunning)
             {
@@ -94,6 +97,7 @@ Input the number corresponding to your choice :");
                     case "3":
                         // Display the settings
                         validOption = true;
+                        changeGameSettings(nbSticks);
                         break;
                     case "4":
                         // Exit the game
@@ -108,6 +112,29 @@ Input the number corresponding to your choice :");
 
             return option; // Add this line to return the value
         }
-    }
-}
 
+        public static void changeGameSettings(pfNbSticks)
+        {
+            Console.WriteLine("Game settings :");
+            Console.WriteLine("Number of sticks : " + pfNbSticks);
+
+            // ask if the user wants to change the settings
+            Console.WriteLine("Do you want to change the settings ? (y/n)");
+            string changeSettings = Console.ReadLine();
+
+            if (changeSettings == "y" || changeSettings == "Y")
+            {
+                Console.WriteLine("Enter the new number of sticks :");
+                int newNbSticks = Convert.ToInt32(Console.ReadLine());
+                pfNbSticks = newNbSticks;
+            }
+            else
+            {
+                Console.WriteLine("Settings unchanged.");
+            }
+
+            Console.WriteLine("Press any key to return to the menu...");
+            Console.ReadKey();
+        } // end function : changeGameSettings
+    } // end class
+} // end namespace
